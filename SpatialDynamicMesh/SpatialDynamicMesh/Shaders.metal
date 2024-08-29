@@ -5,7 +5,7 @@ using namespace metal;
 
 float wave_height(constant WaveDescriptor &wave, float x, float z) {
     float r = sqrt(x * x + z * z);
-    float y = wave.amplitude * cos(-r * 2.0f * M_PI_F * wave.waveDensity + wave.time);
+    float y = wave.amplitude * cos(-r * 40.0f * M_PI_F * wave.waveDensity + wave.time);
     return y;
 }
 

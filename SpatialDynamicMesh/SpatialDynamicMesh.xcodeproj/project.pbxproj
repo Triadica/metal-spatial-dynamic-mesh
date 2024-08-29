@@ -3,17 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 73;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		838031B62C17D4CD00BA4DB2 /* MetalContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838031B52C17D4C700BA4DB2 /* MetalContext.swift */; };
-		838031B82C17D4DE00BA4DB2 /* DynamicMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838031B72C17D4DB00BA4DB2 /* DynamicMesh.swift */; };
-		838031BA2C17D4FE00BA4DB2 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 838031B92C17D4FA00BA4DB2 /* Shaders.metal */; };
 		839906F02C17C8EF00DD5712 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839906EF2C17C8EF00DD5712 /* App.swift */; };
-		839906F22C17C8EF00DD5712 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839906F12C17C8EF00DD5712 /* ContentView.swift */; };
 		839906F42C17C8F000DD5712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839906F32C17C8F000DD5712 /* Assets.xcassets */; };
 		839906F82C17C8F000DD5712 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839906F72C17C8F000DD5712 /* Preview Assets.xcassets */; };
+		9A0B7DBB2C82E82C001245B3 /* MorphSphere.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9A6810E62C8235ED000B4C16 /* MorphSphere.metal */; };
+		9A0B7DBC2C82E980001245B3 /* FractalAnimationLowLevelTextureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6810E82C823605000B4C16 /* FractalAnimationLowLevelTextureView.swift */; };
+		9A0B7DBF2C8468A7001245B3 /* fractalTextureShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9A6810E42C8235A4000B4C16 /* fractalTextureShader.metal */; };
+		9A6810F12C82E6A5000B4C16 /* MorphingSphereMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6810E22C823589000B4C16 /* MorphingSphereMetalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +29,12 @@
 		839906F32C17C8F000DD5712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		839906F52C17C8F000DD5712 /* SpatialDynamicMesh.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpatialDynamicMesh.entitlements; sourceTree = "<group>"; };
 		839906F72C17C8F000DD5712 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9A0B7DC12C846956001245B3 /* RealityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealityKit.framework; path = Platforms/XROS.platform/Developer/SDKs/XROS2.0.sdk/System/Library/Frameworks/RealityKit.framework; sourceTree = DEVELOPER_DIR; };
+		9A6810E02C823477000B4C16 /* FabonacciLatticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabonacciLatticeView.swift; sourceTree = "<group>"; };
+		9A6810E22C823589000B4C16 /* MorphingSphereMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphingSphereMetalView.swift; sourceTree = "<group>"; };
+		9A6810E42C8235A4000B4C16 /* fractalTextureShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = fractalTextureShader.metal; sourceTree = "<group>"; };
+		9A6810E62C8235ED000B4C16 /* MorphSphere.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MorphSphere.metal; sourceTree = "<group>"; };
+		9A6810E82C823605000B4C16 /* FractalAnimationLowLevelTextureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalAnimationLowLevelTextureView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				839906EE2C17C8EF00DD5712 /* SpatialDynamicMesh */,
+				9A0B7DC02C846955001245B3 /* Frameworks */,
 				839906ED2C17C8EF00DD5712 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +68,11 @@
 		839906EE2C17C8EF00DD5712 /* SpatialDynamicMesh */ = {
 			isa = PBXGroup;
 			children = (
+				9A6810E82C823605000B4C16 /* FractalAnimationLowLevelTextureView.swift */,
+				9A6810E62C8235ED000B4C16 /* MorphSphere.metal */,
+				9A6810E42C8235A4000B4C16 /* fractalTextureShader.metal */,
+				9A6810E22C823589000B4C16 /* MorphingSphereMetalView.swift */,
+				9A6810E02C823477000B4C16 /* FabonacciLatticeView.swift */,
 				838031B52C17D4C700BA4DB2 /* MetalContext.swift */,
 				838031B72C17D4DB00BA4DB2 /* DynamicMesh.swift */,
 				839906F12C17C8EF00DD5712 /* ContentView.swift */,
@@ -82,6 +94,14 @@
 				839906F72C17C8F000DD5712 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9A0B7DC02C846955001245B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A0B7DC12C846956001245B3 /* RealityKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +133,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1600;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					839906EB2C17C8EF00DD5712 = {
 						CreatedOnToolsVersion = 15.4;
@@ -121,7 +142,6 @@
 				};
 			};
 			buildConfigurationList = 839906E72C17C8EF00DD5712 /* Build configuration list for PBXProject "SpatialDynamicMesh" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -129,6 +149,7 @@
 				Base,
 			);
 			mainGroup = 839906E32C17C8EF00DD5712;
+			preferredProjectObjectVersion = 73;
 			productRefGroup = 839906ED2C17C8EF00DD5712 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -155,11 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				839906F22C17C8EF00DD5712 /* ContentView.swift in Sources */,
+				9A0B7DBF2C8468A7001245B3 /* fractalTextureShader.metal in Sources */,
+				9A0B7DBC2C82E980001245B3 /* FractalAnimationLowLevelTextureView.swift in Sources */,
+				9A0B7DBB2C82E82C001245B3 /* MorphSphere.metal in Sources */,
+				9A6810F12C82E6A5000B4C16 /* MorphingSphereMetalView.swift in Sources */,
 				839906F02C17C8EF00DD5712 /* App.swift in Sources */,
-				838031B82C17D4DE00BA4DB2 /* DynamicMesh.swift in Sources */,
-				838031B62C17D4CD00BA4DB2 /* MetalContext.swift in Sources */,
-				838031BA2C17D4FE00BA4DB2 /* Shaders.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,13 +320,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SpatialDynamicMesh/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 29T757U3Y2;
 				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpatialDynamicMesh/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Dynamic Mesh";
-				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -319,16 +340,17 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.metalbyexample.SpatialDynamicMesh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiyinyiyong.SpatialDynamicMesh;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = comp.jiyinyiyong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = SpatialDynamicMesh/Bridging.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 7;
 			};
 			name = Debug;
 		};
@@ -343,13 +365,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SpatialDynamicMesh/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 29T757U3Y2;
 				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpatialDynamicMesh/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Dynamic Mesh";
-				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -363,15 +385,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.metalbyexample.SpatialDynamicMesh;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jiyinyiyong.-SpatialDynamicMesh";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = SpatialDynamicMesh/Bridging.h;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 7;
 			};
 			name = Release;
 		};
@@ -385,7 +407,7 @@
 				839906FA2C17C8F000DD5712 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		839906FB2C17C8F000DD5712 /* Build configuration list for PBXNativeTarget "SpatialDynamicMesh" */ = {
 			isa = XCConfigurationList;
@@ -394,7 +416,7 @@
 				839906FD2C17C8F000DD5712 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

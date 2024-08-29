@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "name": "Debug swift-executable",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": ["--hello", "world"],
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/.build/debug/swift-executable",
+      "preLaunchTask": "swift: Build Debug swift-executable"
+    }
+  ]
+}

@@ -19,7 +19,7 @@ class SceneContent {
             let meshResource = try MeshResource(from: wave.lowLevelMesh)
 
             var material = PhysicallyBasedMaterial()
-            material.baseColor.tint = .white
+            material.baseColor.tint = .yellow
             material.roughness.scale = 0.0
             material.metallic.scale = 1.0
             material.faceCulling = .none

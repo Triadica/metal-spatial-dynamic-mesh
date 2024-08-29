@@ -5,11 +5,14 @@ struct SpatialDynamicMeshApp: App {
     
     var body: some Scene {
         WindowGroup() {
-            ContentView()
+            // ContentView()
+            // FibonacciLatticeView()
+            // MorphingSphereMetalView()
+            FractalAnimationLowLevelTextureView()
         }
         #if os(visionOS)
         .windowStyle(.volumetric)
-        .defaultSize(width: 1.0, height: 0.2, depth: 1.0, in: .meters)
+        .defaultSize(width: 1.0, height: 1.0, depth: 0.3, in: .meters)
         #endif
     }
 }
